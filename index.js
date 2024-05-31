@@ -180,7 +180,8 @@ function page6animate(){
 }
 
 
-var tl = gsap.timeline()
+function bodyAnimation(){
+    var tl = gsap.timeline()
 tl.from("#page1",{
     opacity: 0,
     duration: 0.2,
@@ -200,11 +201,36 @@ tl.from("#page1 h1, #page1 p, #page1 div",{
     opacity:0,
     stagger: 0.2
 })
+}
+
+function openImageInNewTab() {
+    const imageUrl = document.querySelector('#right-elem img').src;
+    window.open(imageUrl, '_blank');
+  }
+  function openImageInNewTab1() {
+    const imageUrl = document.querySelector('.click1 img').src;
+    window.open(imageUrl, '_blank');
+  }
+  function openImageInNewTab2() {
+    const imageUrl = document.querySelector('.click2 img').src;
+    window.open(imageUrl, '_blank');
+  }
+  function openImageInNewTab3() {
+    // Define the custom folder path and image file name
+    const customFolderPath = 'images/achieve/flipkart.jpg';
+   
+    window.open(customFolderPath, '_blank');
+  }
+  function openImageInNewTab4() {
+    const imageUrl = document.querySelector('.click2 img').src;
+    window.open(imageUrl, '_blank');
+  }
 
 
 
-locomotiveAnimation()
-navAnimation()
+// locomotiveAnimation()
+// bodyAnimation()
+// navAnimation()
 page2animate()
 page3videoAnimation()
 videoAnimation()
